@@ -1452,7 +1452,7 @@ let borrowedBook = books.reduce((acc, book)=>{
   
   authors.reduce((acc, authorData)=> {
     if(book.authorId === authorData.id){ 
-      book["author"] = authorData[0];
+      book["author"] = authorData;
       // book["author"]["name"] = authorData.name;
     }
 
